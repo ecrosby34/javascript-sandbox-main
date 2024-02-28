@@ -32,9 +32,9 @@ themeSelect.addEventListener("change", () =>
 
 // Simple Weather change values
 
-const select = document.getElementById("weather");
+const select = document.getElementById("weather"); // Corrected selection
 const para = document.querySelector("p");
-let temperature;
+let temperature = 0; // Initialize temperature
 
 select.addEventListener("change", setWeather);
 
@@ -61,20 +61,22 @@ function setWeather() {
     default:
       para.textContent = "";
   }
+
+  // Check temperature and update text accordingly
   if (choice === "sunny" && temperature < 86) {
     para.textContent = `It is ${temperature} degrees outside — nice and sunny. Let's go out to the beach, or the park, and get an ice cream.`;
   } else if (choice === "sunny" && temperature >= 86) {
     para.textContent = `It is ${temperature} degrees outside — REALLY HOT! If you want to go outside, make sure to put some sunscreen on.`;
   }
-  }
-
+}
 
 document.getElementById("tempButton").onclick = function() {
-    temperature = document.getElementById("tempBox").value;
-    temperature = Number(temperature);
+  temperature = document.getElementById("tempBox").value;
+  temperature = Number(temperature);
 
-    setWeather();
+  setWeather();
 }
+
 
 
 
@@ -120,9 +122,9 @@ let y;
 let z;
 
 document.getElementById("rollButton").onclick = function() {
-let x = Math.floor(Math.random() * 20) + 1;
-let y = Math.floor(Math.random() * 20) + 1;
-let z = Math.floor(Math.random() * 20) + 1;
+ x = Math.floor(Math.random() * 20) + 1;
+ y = Math.floor(Math.random() * 20) + 1;
+ z = Math.floor(Math.random() * 20) + 1;
 
 document.getElementById("xLabel").innerHTML = x;
 document.getElementById("yLabel").innerHTML = y;
