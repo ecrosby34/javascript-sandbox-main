@@ -32,7 +32,7 @@ themeSelect.addEventListener("change", () =>
 
 // Simple Weather change values
 
-const select = document.querySelector("select");
+const select = document.getElementById("weather");
 const para = document.querySelector("p");
 let temperature;
 
