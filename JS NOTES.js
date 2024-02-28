@@ -22,3 +22,21 @@ x = Math.PI;
 console.log(x);
 
 
+// If Statements
+
+let shoppingDone = false;
+let childsAllowance;
+
+if (shoppingDone === true) {
+  childsAllowance = 10;
+} else {
+  childsAllowance = 5;
+}
+
+
+// 
+
+if (x === 5 || x === 7 || x === 10 || x === 20) {
+    // run my code
+  }
+  
