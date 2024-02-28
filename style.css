@@ -1,5 +1,19 @@
-#countLabel {
+#countLabel, #xLabel, #yLabel, #zLabel {
     display:block;
     text-align: center;
     font-size: 50px;
+}
+
+#container {
+    text-align: center; /* Center-aligns its children */
+}
+
+#labels {
+    display: inline-block; /* Makes labels behave as inline block */
+    margin-right: 20px; /* Adjust this value as needed */
+}
+
+#rollButton {
+    display: inline-block; /* Makes button behave as inline block */
+    vertical-align: middle; /* Vertically aligns button relative to labels */
 }
